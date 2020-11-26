@@ -13,5 +13,10 @@ public class ToDoBuilder {
         return  instance;
     }
 
+    public ToDoBuilder withDescription(String description) {
+        this.description = description;
+        return  instance;
+    }
+
 
 }
