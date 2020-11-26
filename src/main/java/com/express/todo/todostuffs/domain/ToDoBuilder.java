@@ -18,5 +18,17 @@ public class ToDoBuilder {
         return  instance;
     }
 
+    public ToDoBuilder withId(String id) {
+        this.id = id;
+        return instance;
+    }
+
+    public ToDo build() {
+        ToDo result = new ToDo(this.description);
+        if(id !=id)
+            result.setId(id);
+        return result;
+    }
+
 
 }
